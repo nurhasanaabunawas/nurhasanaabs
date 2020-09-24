@@ -54,7 +54,8 @@
           <li class="active"><a href="basdat.html">Tugas 1</a></li>
           <li class="drop-down"><a href="basdat2.html">Tugas 2</a>
             <ul>
-              <li><a href="#about13">Evaluation Plan</a></li>
+              <li><a href="#about20">Evaluation Plan</a></li>
+              <li><a href="#about21">MySQL Evaluation Plan </a></li>
             </ul>
             <li><a href="#about1">About</a></li>
         </ul>
@@ -108,11 +109,48 @@
   </section><!-- End Hero -->
 
   <main id="main">
+    <section id="about" class="about">
+      <div class="container">
+        <p></p></div>
+
+
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div id="about20"> <br><br><br>
+         <h1>Evaluation Plan</h1>
+              <p>Kebanyakan sistem basis data menyediakan cara untuk melihat rencana evaluasi yang dipilih untuk menjalankan permintaan yang diberikan. Biasanya paling baik menggunakan GUI yang disediakan dengan sistem basisdata untuk melihat rencana evaluasi. Namun, jika Anda menggunakan antarmuka baris perintah, banyak variasi dukungan basis data dari sebuah perintah" explain <query>", yang menampilkan rencana eksekusi yang dipilih untuk query <query> yang dispesifikasikan.Sintaks jelas bervariasi dengan basis data yang berbeda:</p>
+              </p><br><br>
+              <h4>PostgreSQL </h4>
+              <p>menggunakan sintaks yang ditampilkan di atas.</p>   
+              
+              <br><br>
+              <h4>Oracle </h4>
+              <p>menggunakan sintaks "explain plan for". Namun, perintah menyimpan rencana  pada resultant plan yang disebut "plan_table", bukannya menampilkan. Query “select * from table(dbms xplan.display);”  menampilkan plan yang tersimpan (stored).</p>  
+              
+              <br><br>
+              <h4>DB2</h4>
+              <p>mengikuti pendekatan yang sama terhadap Oracle, tapi memerlukan program db2exfmt untuk dieksekusi untuk menampilkan plan yang tersimpan.</p>  
+              <br><br>
+              
+              <h4>SQL </h4>
+              <p>Server SQL memerlukan perintah  "set showplan_text on"  untuk dieksekusi sebelum mengirimkan permintaan; kemudian, ketika sebuah query dimasukkan, ketimbang menjalankan query, evaluation plan yang ditampilkan.</p>  
+
+              <br><br>
+              <h4>MySQL </h4>
+              <p>MySQL menggunakan sintats yang sama pada PostgreSQL yaitu  "explain<query>", tapi outputnya adalah sebuah tabel yang isinya tidak mudah dimengerti. Namun, mengeksekusi peringatan (show warnings) setelah perintah "explain" menampilkan evaluation plan dalam format yang lebih mudah dibaca.</p>  
+<br><br>
+                <p>Perkiraan biaya untuk rencana juga ditampilkan bersama dengan rencana. Hal ini bernilai mencatat bahwa biaya biasanya tidak dalam setiap eksternal satuan berarti, Seperti detik atau operasi I/O, tetapi lebih pada unit apapun biaya model yang optimizer gunakan. Beberapa optimisasi seperti tampilan PostgreSQL dua jumlah biaya perkiraan; pertama menunjukkan biaya untuk outputting hasil pertama, dan kedua menunjukkan perkiraan biaya untuk outputting semua hasil.      </p><br><br>
+            
+         <br><br><br> </div>
+            </div>
 
     <!-- ======= Evaluation Plan ======= -->
     <section id="about" class="about">
       <div class="container">
-        <div id="about13"></div>
+        <div id="about21"></div> <br><br>
+           <h1>MySQL Evaluation Plan</h1>
+           <img src="assets/img/about2.jpg" class="img-fluid" alt="">
         <div class="row no-gutters">
           <div class="col-lg-6 video-box">
             <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
@@ -122,16 +160,17 @@
             </div>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">Parsing</a></h4>
-              <h1 class="description">merupakan proses pertama, dimana ia memeriksa sintaks query yang ditulis. jadi jika terjadi kesalahan di sintaks, proses selanjutnya otomatis tidak akan dilakukan dan mendapatkan peringatan dari DBMS <br><br><br>
-            <h4 class="title"><a href="">Translasi</a></h4>
-            <h1 class="description">selanjutnya, apabila query sudah benar secara sintaks, maka query tersebut akan ditranslasi menjadi aljabar relational. Hal ini musti dilakukan sebab sintaks SQL adalah bahasa pemrograman tingkat tinggi sehingga perlu dirubah ke bahasa yang dimengerti oleh mesin.       <br><br><br>
-              <h4 class="title"><a href="">Optimasi</a></h4>
-              <h1 class="description">proses ini sangat panjang untuk dapat dijabarkan secara luas. simplenya… satu buah query yang sama bisa dibuat lebih dari satu aljabar relational yang berbeda. Maka dari itu, DBMS akan memilih yang mana yang akan dieksekusi. Nah. satu ekspresi aljabar relational yang terbentuk tersebut disebut dengan istilah evaluation plan (EP). EP ini akan dihitung costnya. Cost ini diperoleh dari informasi statistik yang ada di database catalog. Ada banyak parameter biaya yang diperhitungkan. Misalnya banyaknya baris maupun blok di suatu relasi. Proses ini sangat penting jika jumlah baris query-nya sudah memasuki angka jutaan.   <br><br><br>
-                <h4 class="title"><a href="">Eksekusi</a></h4>
-                <h1 class="description">setelah evaluation plan, akan dilakukan eksekusi dan pengambilan data yang diperlukan dari database, nanti hasilnya pun akan ditampilkan di monitor
-
-                  <br><br><br>
+              <h4 class="title"><a href=""> id </a></h4>
+              <h1 class="description">menampilkan nomor urut dari query SELECT yang dimiliki baris ini. karena query tidak berisi subquery atau gabungan, maka id untuk kedua baris adalah 1<br><br>
+            <h4 class="title"><a href="">Select_type </a></h4>
+            <h1 class="description">berisi tentang apakah query berisi subqueri atau gabungan. Hasil EXPLAIN gambar disamping muncul "SIMPLE" yang berarti tidak ada subqueri / gabungan  <br><br>
+              <h4 class="title"><a href="">table</a></h4>
+              <h1 class="description">menampilkan nama tabel yang digunakan dalam query <br><br>
+                <h4 class="title"><a href="">type </a></h4>
+                <h1 class="description">bagaimana tabel itu diakses. eq_ref merupakan tipe gabungan (join type) <br><br>
+                  <h4 class="title"><a href=""> possible_keys </a></h4>
+                  <h1 class="description">menjelaskan jika tabel memiliki indeks untuk mencari baris, indeks dapat dipilih. Dan pada gambar disamping, dijelaskan bahwa keduanya memiliki indeks PRIMARY<br><br>
+                <br><br>
              
               </div>
           </div>
@@ -139,17 +178,23 @@
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
             <div class="section-title">
-              <h2>Evaluation Plan</h2>
+   
             </div>
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <br><br>
-              <img src="assets/img/about1.png" class="img-fluid" alt="">
-              <br><br><br><br><br><br><br>
-              <img src="assets/img/about2.png" class="img-fluid" alt="">
-              <br><br><br><br><br><br><br>
-              <img src="assets/img/about3.png" class="img-fluid" alt="">
-              <br><br><br><br><br><br><br>
-              <img src="assets/img/about2.png" class="img-fluid" alt="">
+              <h4 class="title"><a href="">key_len  </a></h4>
+              <h1 class="description">panjang kunci yang digunakan MySQL, digambar disamping menjelaskan bahwa kedua baris memiliki 4 byte
+           
+              <br><br>
+              <h4 class="title"><a href="">ref </a></h4>
+              <h1 class="description">kolom yang dibandingkan dengan indeks yang diberi nama dikolom kunci 
+              <br><br>
+              <h4 class="title"><a href="">rows</a></h4>
+              <h1 class="description">menunjukkan berapa data yang diambil dalam tabel, tergantung dengan query apa yang dipakai
+              <br><br>
+              <h4 class="title"><a href="">extra </a></h4>
+              <h1 class="description">menunjukkan informasi tambahan tentang query processing, dan pada gambar disamping pada kedua baris menunjukkan "Using Index"
+
            
           </div>
         </div>
@@ -194,7 +239,7 @@
           </div>
           </div>
         </div>
-
+</div>
       </div>
     </section><!-- End About Us Section -->
 
