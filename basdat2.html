@@ -52,7 +52,10 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li class="active"><a href="basdat.html">Tugas 1</a></li>
-            <li class="active"><a href="basdat2.html">Tugas 2</a></li>
+          <li class="drop-down"><a href="basdat2.html">Tugas 2</a>
+            <ul>
+              <li><a href="#about13">Evaluation Plan</a></li>
+            </ul>
             <li><a href="#about1">About</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -106,6 +109,53 @@
 
   <main id="main">
 
+    <!-- ======= Evaluation Plan ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div id="about13"></div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 video-box">
+            <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
+            <div class="section-title">
+            
+              <h2> </h2>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4 class="title"><a href="">Parsing</a></h4>
+              <h1 class="description">merupakan proses pertama, dimana ia memeriksa sintaks query yang ditulis. jadi jika terjadi kesalahan di sintaks, proses selanjutnya otomatis tidak akan dilakukan dan mendapatkan peringatan dari DBMS <br><br><br>
+            <h4 class="title"><a href="">Translasi</a></h4>
+            <h1 class="description">selanjutnya, apabila query sudah benar secara sintaks, maka query tersebut akan ditranslasi menjadi aljabar relational. Hal ini musti dilakukan sebab sintaks SQL adalah bahasa pemrograman tingkat tinggi sehingga perlu dirubah ke bahasa yang dimengerti oleh mesin.       <br><br><br>
+              <h4 class="title"><a href="">Optimasi</a></h4>
+              <h1 class="description">proses ini sangat panjang untuk dapat dijabarkan secara luas. simplenya… satu buah query yang sama bisa dibuat lebih dari satu aljabar relational yang berbeda. Maka dari itu, DBMS akan memilih yang mana yang akan dieksekusi. Nah. satu ekspresi aljabar relational yang terbentuk tersebut disebut dengan istilah evaluation plan (EP). EP ini akan dihitung costnya. Cost ini diperoleh dari informasi statistik yang ada di database catalog. Ada banyak parameter biaya yang diperhitungkan. Misalnya banyaknya baris maupun blok di suatu relasi. Proses ini sangat penting jika jumlah baris query-nya sudah memasuki angka jutaan.   <br><br><br>
+                <h4 class="title"><a href="">Eksekusi</a></h4>
+                <h1 class="description">setelah evaluation plan, akan dilakukan eksekusi dan pengambilan data yang diperlukan dari database, nanti hasilnya pun akan ditampilkan di monitor
+
+                  <br><br><br>
+             
+              </div>
+          </div>
+          
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+            <div class="section-title">
+              <h2>Evaluation Plan</h2>
+            </div>
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <br><br>
+              <img src="assets/img/about1.png" class="img-fluid" alt="">
+              <br><br><br><br><br><br><br>
+              <img src="assets/img/about2.png" class="img-fluid" alt="">
+              <br><br><br><br><br><br><br>
+              <img src="assets/img/about3.png" class="img-fluid" alt="">
+              <br><br><br><br><br><br><br>
+              <img src="assets/img/about2.png" class="img-fluid" alt="">
+           
+          </div>
+        </div>
+      
+      </div>
+    </section><!-- End About Us Section -->
   
         <!-- ======= About Us Section ======= -->
     <section id="about" class="about">

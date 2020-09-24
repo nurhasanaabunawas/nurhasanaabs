@@ -51,7 +51,12 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="active"><a href="basdat.html">Tugas 1</a></li>
+          <li class="drop-down"><a href="TBO.html">Tugas 1</a>
+            <ul>
+              <li><a href="#about10">Cara Mengukur Biaya Query</a></li>
+              <li><a href="#about11">Cara Sistem Database Mengevaluasi Ekspresi </a></li>
+              <li><a href="#about12">Multiple Expression VS Multiple Transformation</a></li>
+            </ul>
             <li class="active"><a href="basdat2.html">Tugas 2</a></li>
             <li><a href="#about1">About</a></li>
         </ul>
@@ -59,7 +64,7 @@
 
     </div>
   </header><!-- End Header -->
-
+     
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
@@ -85,7 +90,10 @@
           <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">“Your biggest weakness is when you give up and your greatest power is when you try one more time.”</h2>
+                <p class="animate__animated animate__fadeInUp">Query dapat diartikan sebagai capability (kemampuan) database pada komputer untuk menampilkan/menyimpan informasi tertentu. Namun perlu diketahui bahwa kemampuan tersebut hanya berupa pre-defined code artinya jika permintaan tidak sesuai dengan informasi yang tersimpan di database, maka permintaan tidak dapat diproses. </p>
+                <h2 class="animate__animated animate__fadeInDown">
+                  
+                </h2>
               </div>
             </div>
           </div>
@@ -105,7 +113,107 @@
   </section><!-- End Hero -->
 
   <main id="main">
+  
+  <!-- ======= Cara Mengukur Biaya Query ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div id="about10">
 
+      <div class="row no-gutters">
+        <div class="col-lg-6 video-box">
+          <div class="section-title"> <br><br>
+            <h2>Cara Mengukur Biaya Query</h2>
+          </div>
+
+          <img src="assets/img/about 6.jpg" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="title"><a href=""></a></h4>
+            <h1 class="description">
+              Biaya evaluasi query dapat diukur dari banyaknya sumber daya (resource) sistem yang digunakan. Sumber daya yang dimaksud meliputi pengaksesan disk, waktu CPU mengerjakan query, dan untuk sistem basis data paralel atau terdistribusi. Adapun pada sistem basis data yang besar, dapat pula memberikan kontribusi biaya query yang dominan.
+    <br><br>
+    Penggunaan Optimizer Query dalam DBMS juga akan sangat membantu dalam memperkirakan biaya pemrosesan suatu query, mengingat fungsinya sebagai pembuat informasi statistik yang memperhatikan jumlah record dalam tabel, ukuran tiap record, blocking factor, jumlah blok yang menampung data dalam tabel, jumlah nilai unik pada suatu atribut dalam tabel, serta rata-rata jumlah record yang memenuhi kondisi kesamaan terhadap suatu atribut.
+   
+            </div>
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+
+     <!-- =======Cara Sistem Database Mengevaluasi Ekspresi ======= -->
+     <section id="about" class="about">
+      <div class="container">
+        <div id="about11"></div>
+
+        <div class="row no-gutters">
+          <div class="col-lg-6 video-box">
+            <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
+            <div class="section-title">
+              <h2> Cara Sistem Database Mengevaluasi Ekspresi</h2>
+              <h2> </h2>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div> <br>
+              <h4 class="title"><a href="">Materialization</a></h4>
+              <h1 class="description">Dalam metode ini, ekspresi yang diberikan mengevaluasi satu operasi relasional dalam satu waktu. Selain itu, setiap operasi dievaluasi dalam urutan atau urutan yang sesuai. Setelah mengevaluasi semua operasi, keluarannya diwujudkan dalam hubungan sementara untuk penggunaan selanjutnya. Ini membawa metode materialisasi pada kerugian. Kerugiannya adalah bahwa ia perlu membangun hubungan sementara tersebut untuk mewujudkan hasil operasi yang dievaluasi, masing-masing. Hubungan sementara ini ditulis pada disk kecuali ukurannya kecil. </h1>
+
+            </div>
+          </div>
+          
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+            <div class="section-title">
+             
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Pipelining </a></h4>
+              <h1 class="description">Pipelining adalah metode alternatif atau pendekatan untuk metode materialisasi. Dalam pipelining, ini memungkinkan kita untuk mengevaluasi setiap operasi relasional ekspresi secara bersamaan dalam pipeline. Dalam pendekatan ini, setelah mengevaluasi satu operasi, keluarannya diteruskan ke operasi berikutnya, dan rantai berlanjut hingga semua operasi relasional dievaluasi secara menyeluruh. Jadi, tidak ada persyaratan untuk menyimpan hubungan sementara dalam pemipaan. Keuntungan pipelining seperti itu membuatnya menjadi pendekatan yang lebih baik dibandingkan dengan pendekatan yang digunakan dalam metode materialisasi. Bahkan biaya dari kedua pendekatan tersebut dapat memiliki perbedaan selanjutnya di antara keduanya. Namun, kedua pendekatan tersebut menjalankan peran terbaik dalam kasus yang berbeda. Dengan demikian, kedua cara tersebut layak di tempatnya.</h1>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+ 
+<!-- =======Cara Sistem Database Mengevaluasi Multiple Ekspresi ======= -->
+<section id="about" class="about">
+  <div class="container">
+    <div id="about12">
+
+    <div class="row no-gutters">
+      <div class="col-lg-6 video-box">
+        <div class="section-title"> <br><br>
+          <h2>Multiple Expression VS Multiple Transformation</h2>
+        </div>
+
+        <img src="assets/img/about5.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+
+
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="title"><a href=""></a></h4>
+          <h1 class="description">
+            Multiple expression mempunyai kelebihan dari segi kinerja karena lebih efisien sedangkan multiple transformation mempunyai kelebihan dari segi memberi penanganan kesalahan yang lebih mudah.        
+                    <br><br>
+                    Ketika multiple expression dibandingkan dengan multiple transformation , maka ada perbedaan pada performa kedua pendekatan tersebut , yakni : ketika multiple expression dimasukkan ke dalam kolom transformasi maka menghasilkan waktu sekitar 02,797 detik. Sedangkan ketika dimasukkan multiple transformation akan menghasilkan sekitar 03,329 detik.
+                  </div>
+                        </div>
+    </div>
+
+  </div>
+</section><!-- End About Us Section -->
   
 
 
