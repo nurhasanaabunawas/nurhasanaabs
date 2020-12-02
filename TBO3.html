@@ -51,15 +51,15 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="TBO.html">Tugas 1</a>
+          <li class="active"><a href="TBO.html">Tugas 1</a></li>
+          <li class="active"><a href="TBO2.html">Tugas 2</a></li>
+          <li class="drop-down"><a href="TBO3.html">Tugas 3</a>
             <ul>
-              <li><a href="#about7">Definisi Teori Bahasa dan Otomota</a></li>
-              <li><a href="#about8">Fungsi Ilmu dalam Teori Bahasa dan Otomota </a></li>
-              <li><a href="#about9">Penerapan Ilmu Teori Bahasa dan Otomota</a></li>
+              <li><a href="#about31">Definisi NFA</a></li>
+              <li><a href="#about32">Penerapan NFA</a></li>
             </ul>
-            <li class="active"><a href="TBO2.html">Tugas 2</a></li>
-            <li class="active"><a href="TBO3.html">Tugas 3</a></li>
-            <li><a href="#about1">About</a></li>
+          <li><a href="#about1">About</a></li>
+        
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -75,7 +75,7 @@
 
       <div class="carousel-inner" role="listbox">
 
-             
+                 
           <!-- Slide 1 -->
           <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
             <div class="carousel-container">
@@ -113,102 +113,93 @@
 <main id="main">
 
   
-     <!-- ======= Definisi Teori Bahasa dan Otomota ======= -->
+     <!-- ======= penerapan TBO ======= -->
      <section id="about" class="about">
       <div class="container">
-        <div id="about7">
+        <div id="about31">
 
         <div class="row no-gutters">
           <div class="col-lg-6 video-box">
-            <div class="section-title"> <br><br>
-              <h2>Definisi Teori Bahasa dan Otomota</h2>
-            </div>
-
-            <img src="assets/img/about.png" class="img-fluid" alt="">
+            <img src="assets/img/about30.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
+            <div class="section-title">
+              <h2>Definisi Non-Deterministic Finite Automata (NFA)</h2>
+            </div>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <h4 class="title"><a href=""></a></h4>
               <h1 class="description">
-                Teori otomata mempelajari tentang mekanisme komputer abstrak atau mesin abstrak. Jauh sebelum ada komputer, tahun 1930, Alan Turing mempelajari mesin abstrak yang punya kemampuan seperti komputer sekarang, dikenal dengan nama Mesin Turing. Tujuan Turing adalah menggambarkan secara jelas apa yang dapat dan yang tidak dapat dilakukan mesin komputing.    
-                <br><br>
-                Pada akhir 1950-an, ahli bahasa N. Chomsky memulai studi tentang "tata bahasa" formal, tata bahasa ini memiliki hubungan dekat dengan otomata abstrak dan saat ini berfungsi sebagai dasar dari beberapa komponen perangkat lunak penting. </div>
-                
+               <p>Nondeterministic Finite Automata (NFA) adalah salah satu bagian dari otomata berhingga atau Finite State Automata (FSA). Pada Nondeterministic Finite Automata (NFA) dimungkinkan satu simbol menimbulkan transisi ke lebih dari satu kondisi dan memberikan beberapa kemungkinan gerakan sehingga keluarannya tidak dapat dipastikan.</p>
+               <p>Pada NFA, dari suatu state bisa terdapat 0 atau 1 atau lebih busur keluar (transisi) berlabel simbol input yang sama. Suatu string diterima oleh NFA bila terdapat suatu urutan transisi sehubungan dengan input string tersebut dari state awal menuju state akhir. Untuk NFA, maka harus mencoba semua kemungkinan yang ada sampai terdapat satu yang mencapai state akhir.</p>
               </div>
+          </div>
         </div>
-
+</div>
       </div>
     </section><!-- End About Us Section -->
 
 
 
-     <!-- =======Fungsi Ilmu dalam Teori Bahasa dan Otomota ======= -->
+     <!-- ======= ilmu TBO ======= -->
      <section id="about" class="about">
       <div class="container">
-        <div id="about8"></div>
+        <div id="about98">
+          <div class="section-title"> <br><br><br>
+            <h2>Penerapan Konsep Non-Deterministic Finite Automata (NFA) pada Aplikasi Simulasi Mesin Kopi Vending</h2>
+            Penelitian oleh Benny Richardson, dkk <br><br>
 
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
-            <div class="section-title">
-              <h2> </h2>
+            Sebuah aplikasi untuk simulasi mesin kopi otomatis akan dibahas menggunakan konsep yang bukan deterministik Automata (NFA). Mesin penjual kopi ini dapat membuat 6 jenis kopi, dengan suhu dan ukuran kaca yang diinginkan.
+            Jenis state diagram yang digunakan yaitu mealy machines dengan konsep Non-Deterministic Finite Automata (NFA). Dengan mealy machines akan terlihat output yang dikeluarkan pada setiap transisi antar state yang terjadi berdasarkan inputan yang diterima dan state sebelumnya. Terdapat juga batasan masalah dalam state diagram ini, dimana inputan uang yang diterima hanya berupa lembaran Rp 5.000 atau Rp 10.000, dan inputan tambahan bahan ekstra pada kopi maksimal sebanyak 2 kali. Bahan ekstra yang dapat dipilih ialah gula, kopi, susu, dan coklat. 
+              Output kopi yang dikeluarkan dapat berupa salah satu dari enam varian rasa kopi yang disediakan. Enam varian kopi tersebut antara lain: espresso, americano, caffee latte, cappuccino, caffe macchiato, dan caffe mocha. Harga kopi juga dibedakan sesuai dengan ukuran gelas kopi yang dipilih, antara lain: small seharga Rp 5.000, medium seharga Rp 10.000, dan large seharga Rp. 15.000.  
+              <br><br>
+              <img src="assets/img/about31.png" class="img-fluid" alt="">
+              <br><br>
+              Pada gambar state diagram diatas dapat dilihat inputan uang yang diterima yaitu x (lembar uang Rp 5.000) dan y (lembar uang Rp 10.000). Setiap kali dimasukkan uang, akan terjadi transisi pada state A (Saldo Rp 0), B (Saldo Rp 5.000), C (Saldo Rp 10.000), dan D (Saldo Rp 15.000). Ketika saldo sudah mencapai  Rp 15.000, tidak dapat diterima inputan uang lagi, sehingga mesin akan mengeluarkan output langsung sesuai dengan inputan uang x atau y yang dimasukkan. Setelah dimasukkan uang, dapat diinput ukuran gelas kopi yang diinginkan, yaitu e (memilih gelas kecil), f (memilih gelas sedang), dan g (memilih gelas besar). </p>
+              Mesin akan mengeluarkan kembalian jika ada. Sebaliknya jika tidak ada kembalian, output yang dikeluarkan bernilai 0 (NULL). Selain output, terdapat juga inputan 0 (NULL) dimana state dapat berpindah langsung ke state selanjutnya tanpa menerima inputan apa-apa. Setelah memilih ukuran gelas, dapat diinput variasi rasa kopi yang diinginkan, antara lain i (memilih espresso), j (memilih americano), k (memilih caffee latte), l (memilih cappuccino), m (caffee macchiatto), dan n (memilih caffee mocha). Inputan gula kemudian akan ditambahkan Secara otomatis sebagai salah satu bahan utama untuk membuat kopi. </p>
+              Terdapat juga bahan ekstra yang dapat diinput maksimal sebanyak 2 kali, yaitu o (memilih gula), p (memilih kopi), q (memilih susu), dan r (memilih coklat). Selanjutnya, mesin akan dimasukkan inputan s (menambahkan sedikit air) untuk melarutkan bahan-bahan yang dicampurkan pada kopi, dan t (aduk) untuk mengaduk kopi. Setelah itu dapat dipilih suhu kopi yang diinginkan, yaitu u (memilih hot) dan v (memilih iced). Jika ingin membatalkan inputan variasi rasa kopi yang dipilih, dapat diinput h (reset) untuk kembali mengulang inputan ke state H. Sedangkan jika ingin memproses inputan, dapat diinput w (proses) untuk membuat kopi. Mesin kemudian akan mengeluarkan output bernilai 1 (mengeluarkan kopi) dan kembali ke state awal untuk memproses transaksi pembelian kopi yang baru.
+          
+              <div class="section-title"> <br><br><br>
+                <h2>Pendefinisian Tupel</h2> <br>
+                Mealy machine didefinisikan dalam 6 tupel, dengan rumus M = (Q, Ʃ, δ, S, Δ, λ), dimana : <br>
+                Q= himpunan state <br>
+                Ʃ = himpunan simbol input <br>
+                Δ = fungsi transisi (δ : Q x Ʃ → Q);<br>
+                S = state awal (initial state); <br>
+                Δ = himpunan output; <br>
+                λ = fungsi output untuk setiap transisi <br><br>
+               
             </div>
 
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Grammars</a></h4>
-              <h1 class="description">Deretan karakter membentuk string. Bahasa (language) didefinisikan sebagai himpunan semua string yang dapat dibentuk dari suatu abjad. Kaidah/aturan pembentukan kata/kalimat disebut tata bahasa (grammar). </h1>
 
+          <div class="row no-gutters">
+            <div class="col-lg-6 video-box">
+              <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
+                  <img src="assets/img/abour33.png" class="img-fluid" alt="">
+              </div>
+  
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/about32.png" class="img-fluid" alt="">
+               </div>
             </div>
-          </div>
+              <br>
+            Dapat dilihat sesuai pendefinisan tupel diatas bahwa mesin dimungkinkan untuk tidak terjadi kesalahan dalam memproses sistem pembayaran dan pilihan kopi yang diinginkan. Mesin akan mengikuti alur inputan dimulai saat menerima uang, memilih ukuran gelas, memilih varian rasa, menambah bahan ekstra, dan memilih suhu kopi. Saat diterima inputan proses, mesin akan membaca simbol-simbol masukan yang diterima dan membuat kopi. 
+            Berdasarkan hasil pengujian yang telah dilakukan, diperoleh kesimpulan bahwa konsep Non-Deterministic Finite  State Automata (NFA) dapat dijadikan sebagai salah satu alternatif  dalam perancangan mesin kopi vending. Konsep NFA tersebut diterapkan untuk menangkap pola inputan yang diberikan dan membaca simbol inputan tersebut menjadi bahasa yang dikenali oleh mesin. Proses pembuatan kopi beserta sistem pembayaran akan dikerjakan secara otomatis. Mesin kemudian akan mengeluarkan output yang sesuai. 
           
 
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-            <div class="section-title">
-              <h2>Fungsi Ilmu dalam Teori Bahasa dan Otomota</h2>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Regular Expressions </a></h4>
-              <h1 class="description">Regular Expressions juga merendahkan struktur data, terutama teks string. Bahasa reguler dinyatakan secara sederhana dengan ekspresi reguler/regular
-                expression (RE). </h1>
-            </div>
-
-
-          </div>
-        </div>
-
+          
+</div>
       </div>
     </section><!-- End About Us Section -->
 
+      <!-- ======= ilmu TBO ======= -->
+     
+  
+            
 
-     <!-- ======= penerapan TBO ======= -->
-     <section id="about" class="about">
-      <div class="container">
-        <div id="about9"></div>
-     <div class="section-title">  <br><br>
-              <h2>Penerapan Ilmu Teori Bahasa dan Otomota</h2>
-            </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/about.png" class="img-fluid" alt=""> <br><br><br>
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">Vending Machine</a></h4>
-              <h1 class="description">Vending Machine merupakan penerapan dari bidang ilmu Teori Bahasa dan Automata yang dapat menjual barang atau kebutuhan manusia secara otomatis. Sistem penjualan dengan Vending Machine tidak membutuhkan operator, pembeli dapat memilih sendiri barang yang diinginkan.  Pemodelan Vending Machine dengan metode finite state automata diharapkan dapat memberikan kemudahan bagi konsumen dalam memenuhi kebutuhan.  Metode pemodelan Vending Machine dengan Finite State Automata untuk menjelaskan logika penerimaan masukan berupa koin pada mesin sampai mendapatkan minuman sesuai dengan pilihan.</h1>
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
+      </section><!-- End About Us Section -->
 
         <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
