@@ -51,15 +51,14 @@
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <li class="drop-down"><a href="TBO.html">Tugas 1</a>
-            <ul>
-              <li><a href="#about7">Definisi Teori Bahasa dan Otomota</a></li>
-              <li><a href="#about8">Fungsi Ilmu dalam Teori Bahasa dan Otomota </a></li>
-              <li><a href="#about9">Penerapan Ilmu Teori Bahasa dan Otomota</a></li>
-            </ul>
-            <li class="active"><a href="TBO2.html">Tugas 2</a></li>
-            <li class="active"><a href="TBO3.html">Tugas 3</a></li>
-            <li class="active"><a href="TBO4.html">Tugas 4</a></li>
+          <li class="active"><a href="TBO.html">Tugas 1</a></li>
+          <li class="active"><a href="TBO2.html">Tugas 2</a></li>
+          <li class="active"><a href="TBO3.html">Tugas 3</a></li>
+            <li class="drop-down"><a href="TBO4.html">Tugas 4</a>
+              <ul>
+                <li><a href="#about51">Definisi REGEX</a></li>
+                <li><a href="#about52">Manfaat REGEX</a></li>
+              </ul>
             <li><a href="#about1">About</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -76,7 +75,7 @@
 
       <div class="carousel-inner" role="listbox">
 
-             
+                 
           <!-- Slide 1 -->
           <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
             <div class="carousel-container">
@@ -114,102 +113,130 @@
 <main id="main">
 
   
-     <!-- ======= Definisi Teori Bahasa dan Otomota ======= -->
+     <!-- ======= penerapan TBO ======= -->
      <section id="about" class="about">
       <div class="container">
-        <div id="about7">
+        <div id="about51">
 
         <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <div class="section-title"> <br><br>
-              <h2>Definisi Teori Bahasa dan Otomota</h2>
-            </div>
-
-            <img src="assets/img/about.png" class="img-fluid" alt="">
+          <div class="col-lg-6 video-box"> <br><br>
+           
+            <img src="assets/img/about52.png" class="img-fluid" alt="" value = "100px"> <br>
+            <h6>  Di atas merupakan  tabel dan deskripsi dari beberapa elemen di regex</h6> <br><br>
+           
           </div>
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
+            <div class="section-title">
+              <h2>Definisi Regular Expression</h2>
+            </div>
 
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <h4 class="title"><a href=""></a></h4>
               <h1 class="description">
-                Teori otomata mempelajari tentang mekanisme komputer abstrak atau mesin abstrak. Jauh sebelum ada komputer, tahun 1930, Alan Turing mempelajari mesin abstrak yang punya kemampuan seperti komputer sekarang, dikenal dengan nama Mesin Turing. Tujuan Turing adalah menggambarkan secara jelas apa yang dapat dan yang tidak dapat dilakukan mesin komputing.    
-                <br><br>
-                Pada akhir 1950-an, ahli bahasa N. Chomsky memulai studi tentang "tata bahasa" formal, tata bahasa ini memiliki hubungan dekat dengan otomata abstrak dan saat ini berfungsi sebagai dasar dari beberapa komponen perangkat lunak penting. </div>
-                
+                Regex (Regular Expression ) adalah sebuah pattern(pola) yang dibangun di bahasa pemrograman Java sejak JDK versi 1.4 (java.util.regex)dimana pola ini digunakan  untuk mencari, mengedit dan memanipulasi sebuah text dari sebuah objek pada class library String.  <br><br>
+                Pada regex terdapat urutan karakter yang memiliki backslash (). Sebagai contoh “\d” adalah kecocokan untuk satu digit [0-9] “\w” adalah kecocokan untuk satu karakter alfanumerik. Ini berarti setiap karakter ASCII yang berupa huruf atau angka [a-z A-Z 0-9]
+              <br>  
+            </div>
+                </div>
+</div>
+      </div>
+    </section><!-- End About Us Section -->
+
+
+      <!-- ======= ilmu TBO ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div id="about52"></div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 video-box">
+              <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
+              <div class="section-title">
+              
+                <h2> </h2>
               </div>
+  
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <h4 class="title"><a href="">1. Regex untuk Validasi Data</a></h4>
+                <h1 class="description">Regex digunakan untuk matching atau pencocokan teks. Pertama-tama, kita harus mendefinisikan pola regex untuk data yang valid. Kemudian, kita lakukan pencocokan dengan pola tersebut. <br>
+                    Berikut ini contohnya di HTML dan Javascript.   
+                    <img src="assets/img/about41.png" class="img-fluid" alt="">
+                    <h1 class="description">Perhatikan atribut pattern, atribut ini digunakan untuk menyimpan pola regex. Pada contoh di atas, polanya adalah pengecekan karakter yang diinputkan pada password.
+                <br><br>
+
+                <h4 class="title"><a href="">2. Regex untuk Pencarian</a></h4>
+              <h1 class="description">
+                Contoh penerapan regex untuk pencarian sebenarnya hampir sama dengan validasi data. Pola regex dimasukan dalam kata kunci, lalu dicocokan dengan database atau teks. Contoh program yang menerapkan ini adalah grep.
+              <br>  Program grep (globally search for a regular expression and print matching lines) biasanya kita temukan di sistem operasi Unix dan Linux, bahkan ini menjadi program yang selalu ada di setiap distro Linux. Program grep melakukan pencarian berdasarkan pola regex yang diberikan, lalu mencetak output hasilnya.
+              <br> <br>  Contoh: Misalkan kita ingin mencari teks pada syslog. Kita bisa melihat isi file syslog dengan cat.   
+              <img src="assets/img/about42.png" class="img-fluid" alt="">
+              <h1 class="description"> 
+                Perintah ini akan menampilkan banyak sekali teks. Nah di sini kita bisa memanfaatkan grep untuk mencari teks tertentu pada log. <br>
+                 Misalnya: Saya ingin tau apa saja log yang berkaitan dengan jaringan:
+                 <img src="assets/img/about43.png" class="img-fluid" alt="">
+                 <h1 class="description"> 
+                    Perhatikan, kata network ini adalah pola regex yang akan menjadi kata kunci pencarian. <br>
+                    Maka hasilnya:
+                    <img src="assets/img/about44.png" class="img-fluid" alt="">
+                    <h1 class="description"> 
+                        Grep akan mewarnai hasil teks yang cocok dengan pola regex yang diberikan. Dari hasil tersebut, saya bisa tahu apa saja log yang sudah dilakukan pada jaringan di komputer saya.
+                        Tidak hanya di grep, pada beberapa teks editor juga menerapkan regex untuk pencarian. <br><br><br> <br><br>
+                        sumber : https://www.petanikode.com/regex/
+                        <br><br><br>
+
+            </div>
+            </div>
+            
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
+              <div class="section-title">
+                <h2>Manfaat Regex dalam Pemrograman</h2>
+              </div>
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <br><br>
+                <h4 class="title"><a href="">Regex untuk Find and Replace</a></h4>
+                <h1 class="description">
+                    Fitur ini membantu untuk mengelola teks dan konten lebih efisien. 
+                    Misalkan jika kode ada ratusan konten dengan format markdown. Lalu di suatu kondisi kita ingin mengubah beberapa teks di semua konten tersebut. Dengan regex, kita bisa melakukannya dalam hitungan detik. Cukup bikin pola pencarian dan pola untuk mengubahnya (subtitusi).
+                     <br>  Contoh: <br>
+                    Jika ingin mengubah ini:
+                    <img src="assets/img/about45.png" class="img-fluid" alt="">
+                <h1 class="description">
+                    Menjadi ini: <br>
+                    <img src="assets/img/about46.png" class="img-fluid" alt="">
+
+                <h1 class="description">
+                        Maka pola pencariannya adalah: <br>
+                        <img src="assets/img/about47.png" class="img-fluid" alt="">
+
+                <h1 class="description">
+                    Maka hasilnya: <br>
+                        <img src="assets/img/about48.png" class="img-fluid" alt="">
+                        
+
+                <h1 class="description">
+                    Pada pola pencarian di atas,  dilakukan pengelompokan atau grouping sebanyak lima kelompok. Lalu melakukan subtitusi atau replace. <br>
+                    <img src="assets/img/about49.png" class="img-fluid" alt="">
+
+                <h1 class="description">
+                    Contoh lainnya:
+                     <img src="assets/img/about50.png" class="img-fluid" alt="">
+
+                  <h1 class="description">
+                    Pada kasus ini, saya ingin mengambil data nama:nama/domain dan menghilangkan teks dibelakangnya.
+<br>
+                    Hasilnya setelah disubtitusi:
+                    <img src="assets/img/about51.png" class="img-fluid" alt="">
+
+
+
+                   
+            </div>
+          </div>
+        
         </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-
-
-     <!-- =======Fungsi Ilmu dalam Teori Bahasa dan Otomota ======= -->
-     <section id="about" class="about">
-      <div class="container">
-        <div id="about8"></div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <div class="col-lg-6 d-flex flex-column justify-content-center about-content"></div>
-            <div class="section-title">
-              <h2> </h2>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Grammars</a></h4>
-              <h1 class="description">Deretan karakter membentuk string. Bahasa (language) didefinisikan sebagai himpunan semua string yang dapat dibentuk dari suatu abjad. Kaidah/aturan pembentukan kata/kalimat disebut tata bahasa (grammar). </h1>
-
-            </div>
-          </div>
-          
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-            <div class="section-title">
-              <h2>Fungsi Ilmu dalam Teori Bahasa dan Otomota</h2>
-            </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Regular Expressions </a></h4>
-              <h1 class="description">Regular Expressions juga merendahkan struktur data, terutama teks string. Bahasa reguler dinyatakan secara sederhana dengan ekspresi reguler/regular
-                expression (RE). </h1>
-            </div>
-
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-
-     <!-- ======= penerapan TBO ======= -->
-     <section id="about" class="about">
-      <div class="container">
-        <div id="about9"></div>
-     <div class="section-title">  <br><br>
-              <h2>Penerapan Ilmu Teori Bahasa dan Otomota</h2>
-            </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/about.png" class="img-fluid" alt=""> <br><br><br>
-          </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <h4 class="title"><a href="">Vending Machine</a></h4>
-              <h1 class="description">Vending Machine merupakan penerapan dari bidang ilmu Teori Bahasa dan Automata yang dapat menjual barang atau kebutuhan manusia secara otomatis. Sistem penjualan dengan Vending Machine tidak membutuhkan operator, pembeli dapat memilih sendiri barang yang diinginkan.  Pemodelan Vending Machine dengan metode finite state automata diharapkan dapat memberikan kemudahan bagi konsumen dalam memenuhi kebutuhan.  Metode pemodelan Vending Machine dengan Finite State Automata untuk menjelaskan logika penerimaan masukan berupa koin pada mesin sampai mendapatkan minuman sesuai dengan pilihan.</h1>
-            </div>
-          </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
+      </section><!-- End About Us Section -->
 
         <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -290,3 +317,4 @@
 </body>
 
 </html>
+
